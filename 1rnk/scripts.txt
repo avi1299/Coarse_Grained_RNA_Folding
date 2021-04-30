@@ -1,0 +1,8 @@
+python3 ../tacoxDNA-master/src/PDB_oxDNA.py 1rnk.pdb 53
+
+./../oxDNA/build/bin/oxDNA inputMD1small
+
+./../cogli2/build/bin/cogli2 --drums --rna --always-centre -t 1rnk.pdb.top trajectory.dat
+
+python3 RoG.py 1rnk.pdb.top trajectory.dat
+
